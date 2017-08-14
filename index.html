@@ -15,13 +15,11 @@
 </head>
 
 <body ng-app="super"  ng-controller="supersController">
-<button ng-click="sayhello()">say hello </button>
   <div class="well" ng-repeat= "Hero in Heros">
-
+<img ng-src="images/{{Hero.image}}" class="responsive 350 * 300">
 <strong><h3> {{Hero.name}}</h3></strong>
 <strong><p>phone:  {{Hero.phone}}</p></strong>
 <strong><p> Comics: {{Hero.comics}}</p></strong>
-<p> {{Hero.image}}</p>
   </div>
 
 </body>
